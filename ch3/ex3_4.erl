@@ -3,12 +3,12 @@
 -export([new/0, destroy/1, write/3, delete/2, read/2, match/2]).
 -export([test/0]).
 
-% ex3_4:new() ⇒ Db.
-% ex3_4:destroy(Db) ⇒ ok.
-% ex3_4:write(Key, Element, Db) ⇒ NewDb.
-% ex3_4:delete(Key, Db) ⇒ NewDb.
-% ex3_4:read(Key, Db) ⇒{ok, Element} | {error, instance}.
-% ex3_4:match(Element, Db) ⇒ [Key1, ..., KeyN].
+% ex3_4:new() => Db.
+% ex3_4:destroy(Db) => ok.
+% ex3_4:write(Key, Element, Db) => NewDb.
+% ex3_4:delete(Key, Db) => NewDb.
+% ex3_4:read(Key, Db) => {ok, Element} | {error, instance}.
+% ex3_4:match(Element, Db) => [Key1, ..., KeyN].
 
 new() -> 
     [].

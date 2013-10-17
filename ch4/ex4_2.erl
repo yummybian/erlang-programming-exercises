@@ -10,7 +10,6 @@ start_proc(Pid, M, 0, Message) ->
     recv_messages(M, Message),
     Pid ! {Pid, ok};
 start_proc(Pid, M, N, Message) ->
-    % register(ring, spawn(?MODULE, start_proc, [Pid, M, N-1, Message])),
     NPid = spawn(?MODULE, start_proc, [Pid, M, N-1, Message]),
     send_messages(NPid, M, Message),
     recv_messages(M, Message),
