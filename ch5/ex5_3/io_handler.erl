@@ -1,11 +1,3 @@
-%% Code from 
-%%   Erlang Programming
-%%   Francecso Cesarini and Simon Thompson
-%%   O'Reilly, 2008
-%%   http://oreilly.com/catalog/9780596518189/
-%%   http://www.erlangprogramming.org/
-%%   (c) Francesco Cesarini and Simon Thompson
-
 -module(io_handler).
 -export([init/1, terminate/1, handle_event/2]).
 
