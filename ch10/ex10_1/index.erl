@@ -17,7 +17,7 @@ index(File) ->
   processFile(File),
   prettyIndex().
 
-processFile(File) ->
+prettyEntryprocessFile(File) ->
   {ok,IoDevice} = file:open(File,[read]),
   processLines(IoDevice,1).
 
