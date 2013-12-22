@@ -1,0 +1,1 @@
+-record(muppet, {name, callsign, salary}).
